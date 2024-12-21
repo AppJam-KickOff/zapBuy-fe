@@ -6,7 +6,7 @@ import { MemoryRouter, Routes } from "react-router-dom";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <MemoryRouter>
+    <MemoryRouter initialEntries={["/"]}>
       <Routes>
         <Routes path="/" element={<App />} />
       </Routes>
